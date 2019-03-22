@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ctm-0s-tm0">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.47"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--擋車-->
+        <scene sceneID="cnM-D4-Szh">
+            <objects>
+                <tableViewController id="261-Xw-rqx" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="j0l-gJ-159" userLabel="擋車">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="G4B-eI-pkf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="擋車" translatesAutoresizingMaskIntoConstraints="NO" id="10Y-EQ-a2w">
+                                    <rect key="frame" x="25" y="13" width="364" height="244"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="safeArea" id="SfW-ht-xy0"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="alh-YR-dTh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="blw-n5-hnd" userLabel="kymco">
+                                        <rect key="frame" x="0.0" y="271" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="blw-n5-hnd" id="4dI-Ni-EnC">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kymco" translatesAutoresizingMaskIntoConstraints="NO" id="GVS-sU-Sa5">
+                                                    <rect key="frame" x="21" y="-5" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nyI-hg-tKd" kind="show" id="NYt-bm-aRe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="PWL-a4-Bt3" userLabel="yamaha">
+                                        <rect key="frame" x="0.0" y="351" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWL-a4-Bt3" id="niG-4w-8Pn">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yamaha" translatesAutoresizingMaskIntoConstraints="NO" id="35w-ph-sv5">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="aTZ-Ta-oDR" kind="show" id="86l-TX-Hcs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="oux-YK-nYT" userLabel="honda">
+                                        <rect key="frame" x="0.0" y="431" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oux-YK-nYT" id="f5z-x9-lZL">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="honda" translatesAutoresizingMaskIntoConstraints="NO" id="Ks9-na-aH5">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Uzo-Dp-eIv" kind="show" id="0CK-ei-eTu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="0Vh-Ba-Q2O" userLabel="kawasaki">
+                                        <rect key="frame" x="0.0" y="511" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Vh-Ba-Q2O" id="kaJ-oy-mn6">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kawasaki" translatesAutoresizingMaskIntoConstraints="NO" id="vA6-pL-fZ8">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gap-Na-9zV" kind="show" id="QAM-GR-qDD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="YWe-Lq-tLd" userLabel="suzuki">
+                                        <rect key="frame" x="0.0" y="591" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YWe-Lq-tLd" id="Etb-yd-RBN">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="suzuki" translatesAutoresizingMaskIntoConstraints="NO" id="rKM-O5-cbt">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gap-Na-9zV" kind="show" id="3J8-ch-aEh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="hpR-Gb-9Ff" userLabel="sym">
+                                        <rect key="frame" x="0.0" y="671" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hpR-Gb-9Ff" id="R6z-3k-it4">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sym" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-gd-0fm">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0Pf-jU-oM2" kind="show" id="Qfo-zU-yLV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="hFx-M6-LTj" userLabel="aeon">
+                                        <rect key="frame" x="0.0" y="751" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFx-M6-LTj" id="12S-LK-sHP">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AEON" translatesAutoresizingMaskIntoConstraints="NO" id="VBr-xF-CS3">
+                                                    <rect key="frame" x="21" y="2" width="298" height="74"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ofy-9i-r00" kind="show" id="lY1-yF-Yxr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="261-Xw-rqx" id="E3k-jt-9El"/>
+                            <outlet property="delegate" destination="261-Xw-rqx" id="SL2-dA-9Sx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="擋車" id="JMn-lS-pJt" userLabel="擋車"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgG-fe-yga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2373.913043478261" y="-2213.1696428571427"/>
+        </scene>
+        <!--擋車-->
+        <scene sceneID="uIR-BH-Y5v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ctm-0s-tm0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="擋車" image="Icon-App-40x40" id="ZFH-I8-AWW" userLabel="擋車"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ShK-7n-4aA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="261-Xw-rqx" kind="relationship" relationship="rootViewController" id="A4s-p6-vKl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2H7-ry-MBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3284.057971014493" y="-2213.1696428571427"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="fC6-lU-FaI">
+            <objects>
+                <tableViewController id="nyI-hg-tKd" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ebM-vy-oFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="kymco" id="pg5-wy-W80" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="33r-F5-6Bi">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="33r-F5-6Bi" id="GRF-hO-2wf">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quannon" translatesAutoresizingMaskIntoConstraints="NO" id="Clc-y4-LGG">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcI-Sg-nwm">
+                                                    <rect key="frame" x="87" y="281" width="240" height="192"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">KYMCO Quannon NK 150諸元表
+引擎形式：國際五檔4V OHC油冷引擎
+實際排量：149.4 c.c.
+最大馬力：13.5 ps / 9000 rpm
+最大扭力：1.19 kg-m /7000 rpm
+長x寬x高：2057x752x1740  mm
+最低座高：NA
+前懸吊：NA
+後懸吊：中置式單槍避震器
+前輪制動： 雙活塞卡鉗+276mm浪花碟
+後輪制動： 雙活塞卡鉗+220mm浪花碟
+前輪尺寸：110/80-17
+後輪尺寸：140/70-17
+車體重量：149kg(整備重)
+油箱容量：13.5L
+官方建議售價：NA
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Quannon NK" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jY-eL-7Q1">
+                                                    <rect key="frame" x="107" y="11" width="201" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="tSJ-Cf-qBP">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tSJ-Cf-qBP" id="hR3-tZ-COO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="KTR" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8z-dN-We2">
+                                                    <rect key="frame" x="165" y="11" width="84" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="24m-q3-VHz">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSC-Ff-emr">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">KYMCO KTR 150諸元表
+引擎形式：4V氣冷OHC單汽缸
+實際排量：149.4 c.c.
+最大馬力：12.8ps/9500 rpm
+最大扭力：1.1kg-m/7500 rpm
+長x寬x高：1990x840x1120  mm
+最低座高：NA
+前懸吊：潛望鏡式
+後懸吊：氮氣避震器
+前輪制動： NA
+後輪制動： NA
+前輪尺寸：2.75x18
+後輪尺寸：120/80-16
+車體重量：126kg(淨重)
+油箱容量：6.91L
+官方建議售價：NA
+*所有資訊以官方公佈為準</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="nyI-hg-tKd" id="vVI-Vg-2Dx"/>
+                            <outlet property="delegate" destination="nyI-hg-tKd" id="OmM-A1-pPM"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ku-hb-ZDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1228.985507246377" y="-2741.5178571428569"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="Sva-GX-EzD">
+            <objects>
+                <tableViewController id="aTZ-Ta-oDR" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nsL-5z-M9B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="yamaha" id="vtC-17-YZv" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="7we-2r-Mdc">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7we-2r-Mdc" id="zk6-Ii-33O">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mt03" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-9i-Ipd">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVH-lo-LGF">
+                                                    <rect key="frame" x="87" y="281" width="240" height="193"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">YAMAHA MT-03諸元表
+引擎形式：四行程水冷雙缸DOHC 4V
+實際排量：321 cc
+最大馬力：42 ps / 10750 rpm
+最大扭力：3.0 Kg-m / 9000 rpm
+長x寬x高：2090 x 745 x 1035 mm
+最低座高：780 mm
+前懸吊：正立式前叉
+後懸吊：中置單槍避震器
+前輪制動：298mm碟盤+單向雙活塞卡鉗
+後輪制動：220mm碟盤+單向單活塞卡鉗
+前輪尺寸：110/70-17
+後輪尺寸：140/70-17
+車體重量：165 Kg
+油箱容量：14 L
+官方建議售價：NA
+ 
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="MT 03" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgx-7c-hrS">
+                                                    <rect key="frame" x="152" y="11" width="111" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="cz0-rt-P76">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cz0-rt-P76" id="bVx-y6-HIE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="I60021-big" translatesAutoresizingMaskIntoConstraints="NO" id="aX3-jp-1vN">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAE-cq-tTr">
+                                                    <rect key="frame" x="87" y="281" width="240" height="193"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">YAMAHA R3諸元表
+引擎形式：水冷4行程並列雙缸 DOHC 4V
+實際排量：321 cc
+最大馬力：42 ps/ 10,750 rpm
+最大扭力：3.0 kg-m/ 9,000 rpm
+長x寬x高：2090 x 720 x 1135 mm
+最低座高：780 mm
+前懸吊：41 mm 正立式前叉
+後懸吊：單槍式避震
+前輪制動：單向雙活塞卡鉗+298mm碟盤
+後輪制動：單向單活塞卡鉗+220碟盤
+前輪尺寸：110/ 70 - 17 M/C 54H
+後輪尺寸：140/ 70 - 17 M/C 66H
+車體重量：167 Kg
+油箱容量：14 L
+官方建議售價：NA
+
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="R3" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Y2-VvB">
+                                                    <rect key="frame" x="180" y="11" width="55" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="aTZ-Ta-oDR" id="EtV-F9-1iP"/>
+                            <outlet property="delegate" destination="aTZ-Ta-oDR" id="0MC-NX-9ud"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8G-aO-qu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1229" y="-2075"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="hHT-CV-T7z">
+            <objects>
+                <tableViewController id="0Pf-jU-oM2" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wgY-gL-Xbp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="yamaha" id="6kI-5m-4I2" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="ELX-AQ-QCT">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ELX-AQ-QCT" id="VWL-cK-nWI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="野狼" translatesAutoresizingMaskIntoConstraints="NO" id="ZHH-mz-mc0">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCE-Tp-p8J">
+                                                    <rect key="frame" x="87" y="281" width="240" height="188"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">SYM 野狼 125諸元表
+引擎形式：四行程空冷單缸OHC 2V
+實際排量：149.4 cc
+最大馬力：NA
+最大扭力：NA
+長x寬x高：1890 x 774 x 1060 mm
+最低座高：NA
+前懸吊：正立式前叉
+後懸吊：五段可調式雙槍避震器
+前輪制動：鼓煞
+後輪制動：鼓煞
+前輪尺寸：2.75 18
+後輪尺寸：3.00 17
+車體重量：118 Kg
+油箱容量：NA
+官方建議售價：NA
+ 
+*所有資訊以官方公佈為準</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="野狼" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5u-8e-JYZ">
+                                                    <rect key="frame" x="163" y="11" width="89" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="tyw-fW-mef">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tyw-fW-mef" id="rjD-cE-nbY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="t2" translatesAutoresizingMaskIntoConstraints="NO" id="N5a-mH-rDq">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eoh-zq-aIb">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">SYM 野狼 T2 ABS 諸元表
+引擎形式：四衝,四閥,水冷
+實際排量：250.6 cc
+最大馬力：NA
+最大扭力：NA
+長x寬x高：2005x790x1050  mm
+最低座高：NA
+前懸吊：NA
+後懸吊：NA
+前輪制動：288mm浪花碟盤+對向四活塞輻射卡鉗+ABS
+後輪制動：碟煞+ABS
+前輪尺寸：110/70 17
+後輪尺寸：140 /70 17
+車體重量：173kg(整備重)
+油箱容量：NA
+官方建議售價：NA
+*所有資訊以官方公佈為準</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ｔ2" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbb-Hu-C5R">
+                                                    <rect key="frame" x="169" y="11" width="77" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0Pf-jU-oM2" id="mda-BF-FMD"/>
+                            <outlet property="delegate" destination="0Pf-jU-oM2" id="RAq-Bh-5Nn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABl-Wl-4b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1228.985507246377" y="-1381.4732142857142"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="7Ez-um-hga">
+            <objects>
+                <tableViewController id="ofy-9i-r00" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="S91-JS-uK6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="kymco" id="rsy-Wc-sfh" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="qD7-An-Xwf">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qD7-An-Xwf" id="ogC-G6-VdH">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="my150" translatesAutoresizingMaskIntoConstraints="NO" id="Hkw-Cl-e2U">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUj-GS-wOJ">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">AEON My150諸元表
+引擎形式：四行程空冷單缸OHC 4V
+實際排量：150.1 cc
+最大馬力：14 ps / 8000 rpm
+最大扭力：1.3 Kg-m / 5250 rpm
+長x寬x高：1770 x 770 x 1150 mm
+最低座高：800 mm
+前懸吊：正立式前叉
+後懸吊：可調式中置單槍避震器
+前輪制動：256mm碟盤+單向雙活塞卡鉗
+後輪制動：190mm碟盤+單向單活塞卡鉗
+前輪尺寸：110/80-14
+後輪尺寸：120/80-14
+車體重量：118 Kg
+油箱容量：6 L
+官方建議售價：普通版78000元/特仕版80000元(皆不含牌險)
+ 
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="MY 150" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0L-ot-na7">
+                                                    <rect key="frame" x="148" y="11" width="118" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="ofy-9i-r00" id="pRw-oF-Kqz"/>
+                            <outlet property="delegate" destination="ofy-9i-r00" id="0qJ-YV-rhi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqz-e4-hb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510" y="-2742"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="4K1-WB-x0m">
+            <objects>
+                <tableViewController id="NsX-Hg-ZNJ" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WNX-q2-5OT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="kymco" id="rAT-ps-OcW" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="cgJ-Lc-EoV">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cgJ-Lc-EoV" id="ooP-AM-4Rm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vstroam" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-0V-u1P">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-dB-YFR">
+                                                    <rect key="frame" x="87" y="281" width="240" height="179"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">SUZUKI V-Storm 1000諸元表
+引擎形式：四行程水冷雙缸DOHC 
+實際排量：1037 cc
+最大馬力：100.6 ps / 8000 rpm
+最大扭力：10.5 Kg-m / 4000 rpm
+長x寬x高：2285 x 865 x 1410 mm
+最低座高：850 mm
+前懸吊：倒立式前叉
+後懸吊：可調式單槍避震器
+前輪制動：310mm碟盤+單向雙活塞卡鉗(雙)
+後輪制動：260mm碟盤+單向單活塞卡鉗
+前輪尺寸：110/80R-19
+後輪尺寸：150/70R-17
+車體重量：228 Kg
+油箱容量：17 L
+官方建議售價：548,000元(不含牌險)
+ 
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="V-Strom" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-Qw-RmF">
+                                                    <rect key="frame" x="148" y="11" width="179" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="rkM-QA-8Bf">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkM-QA-8Bf" id="fZd-Uq-GXq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gsx1000" translatesAutoresizingMaskIntoConstraints="NO" id="Tyl-VR-XHo">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyc-oi-VIA">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">SUZUKI GSX-S1000F諸元表
+引擎形式：四行程水冷四缸DOHC 
+實際排量：999 cc
+最大馬力：144 ps / 9500 rpm
+最大扭力：10.81 Kg-m / 9500 rpm
+長x寬x高：2115 x 795 x 1180 mm
+最低座高：810 mm
+前懸吊：43mm可調式倒立式前叉
+後懸吊：可調式多連桿避震器
+前輪制動：310mm碟盤+輻射對向四活塞卡鉗(雙)
+後輪制動：碟盤+雙向雙活塞卡鉗
+前輪尺寸：120/70-17
+後輪尺寸：190/50-17
+車體重量：215 Kg
+油箱容量：17 L
+官方建議售價：618,000元(不含牌險)
+ 
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="GSX-S1000" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpz-Ws-ltb">
+                                                    <rect key="frame" x="118" y="11" width="179" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="NsX-Hg-ZNJ" id="d7o-xS-1cz"/>
+                            <outlet property="delegate" destination="NsX-Hg-ZNJ" id="LVl-je-yVK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CG0-P5-HmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510.14492753623193" y="-2075.2232142857142"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="9lI-J8-2Il">
+            <objects>
+                <tableViewController id="Uzo-Dp-eIv" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7mX-Iy-crI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="kymco" id="1gJ-sm-FnQ" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="bEG-zy-ojm">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bEG-zy-ojm" id="Ycc-Gy-BRS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cbr" translatesAutoresizingMaskIntoConstraints="NO" id="Atr-Aj-E22">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7G-XK-2ZI">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">HONDA CBR500R諸元表
+引擎形式：四行程水冷雙缸DOHC
+實際排量：471 cc
+最大馬力：50 ps / 8500 rpm
+最大扭力：4.5 Kg-m / 7000 rpm
+長x寬x高：2080 x 750 x 1145 mm
+最低座高：NA
+前懸吊：41mm預載可調正立式前叉
+後懸吊：9段預載可調式多連桿單槍避震器
+前輪制動：320mm碟盤+單向雙活塞卡鉗
+後輪制動：240mm碟盤+單向單活塞卡鉗
+前輪尺寸：120/70ZR-17
+後輪尺寸：160/60ZR-17
+車體重量：195 Kg
+油箱容量：16.7 L
+官方建議售價：340,000元(不含牌險)
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="CBR-500R" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9e-xT-E3a">
+                                                    <rect key="frame" x="118" y="11" width="179" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="RpU-MJ-w6r">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RpU-MJ-w6r" id="Ty3-ah-ahu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cb" translatesAutoresizingMaskIntoConstraints="NO" id="yoo-Jm-BNz">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUk-iO-bV7">
+                                                    <rect key="frame" x="87" y="281" width="240" height="185"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">HONDA CB650F諸元表
+引擎形式：水冷並列4汽缸16汽門DOHC
+實際排量：649 c.c.
+最大馬力：82hp / 11,000rpm
+最大扭力：6.4kg-m / 8,000rpm
+長x寬x高：2110x755x1120  mm
+最低座高：NA
+前懸吊：41mm 正立式前叉
+後懸吊：單槍避震器7段預載可調
+前輪制動： NA
+後輪制動： NA
+前輪尺寸：120/70 ZR17 M/C (58W)
+後輪尺寸：180/55 ZR17 M/C (73W)
+車體重量：208kg(裝備重量)
+油箱容量：17.3L
+官方建議售價：388,000
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="CB-650F" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHT-fX-8UM">
+                                                    <rect key="frame" x="118" y="11" width="179" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Uzo-Dp-eIv" id="3LN-M0-TPM"/>
+                            <outlet property="delegate" destination="Uzo-Dp-eIv" id="4mr-xN-OSb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gky-w7-dLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510.14492753623193" y="-1381.4732142857142"/>
+        </scene>
+        <!--kymco-->
+        <scene sceneID="2PG-5N-kJu">
+            <objects>
+                <tableViewController id="gap-Na-9zV" userLabel="kymco" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gGg-Xc-IeC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="kymco" id="lFt-wk-rEI" userLabel="100CC" colorLabel="IBBuiltInLabel-Orange">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="8qp-XB-GMj">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8qp-XB-GMj" id="6YL-D9-eIr">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-pM-rrP">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-qp-bdW">
+                                                    <rect key="frame" x="87" y="281" width="240" height="214"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">KAWASAKI Ninja 300 ABS 諸元表
+引擎形式：水冷4行程並列雙缸8汽門DOHC
+實際排量：296 cc
+最大馬力：29 kW(39 PS) / 11,000 rpm(EUR)
+最大扭力：27 N-m (2.8 kgf-m) / 10,000 rpm(EUR)
+長x寬x高：2015x715x1110  mm
+最低座高：785 mm
+前懸吊：37mm管徑正立式前叉
+後懸吊：Uni-Trak；5段預載可調
+前輪制動： 單290mm碟盤+ABS
+後輪制動： 單220mm碟盤+ABS
+前輪尺寸：110/70-17
+後輪尺寸：140/70-17
+車體重量：174kg(整備重)
+油箱容量：17L
+官方建議售價：NA
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Ninja 300" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnQ-yc-JY2">
+                                                    <rect key="frame" x="118" y="11" width="179" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="506" id="WWq-M4-dF3">
+                                        <rect key="frame" x="0.0" y="534" width="414" height="506"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WWq-M4-dF3" id="c9N-FO-oWg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="505.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="z1000" translatesAutoresizingMaskIntoConstraints="NO" id="HJ0-34-wwz">
+                                                    <rect key="frame" x="71" y="76" width="273" height="197"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EV-ee-4lF">
+                                                    <rect key="frame" x="87" y="281" width="240" height="182"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <mutableString key="text">KAWASAKI Z1000 ABS 諸元表
+引擎形式：水冷4行程並列4缸16汽門DOHC
+實際排量：1043 c.c.
+最大馬力：104.5 kW (142 PS) / 10,000 rpm(EUR)
+最大扭力：111N-m (11.3 kgf-m) / 7,300 rpm(EUR)
+長x寬x高：2045 x 790 x 1055  mm
+最低座高：815 mm
+前懸吊：41mm管徑倒立式前叉；無段式壓縮回彈阻尼、彈簧預載可調
+後懸吊：水平連桿式單槍；無段式回彈阻尼、預載可調
+前輪制動： 雙浮動式310mm浪花碟+ABS
+後輪制動： 單250mm浪花碟+ABS
+前輪尺寸：120/70 ZR17
+後輪尺寸：190/50 ZR17
+車體重量：221kg（裝備重量）
+油箱容量：17L
+官方建議售價：NA
+*所有資訊以官方公佈為準</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Z1000" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atg-tP-uf2">
+                                                    <rect key="frame" x="144" y="11" width="126" height="57"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="gap-Na-9zV" id="P32-Ae-3eF"/>
+                            <outlet property="delegate" destination="gap-Na-9zV" id="pc0-TK-veY"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1a-Ox-zK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="-2742.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="9" width="700" height="524"/>
+        <image name="AEON" width="2282" height="374"/>
+        <image name="I60021-big" width="1600" height="1203"/>
+        <image name="Icon-App-40x40" width="40" height="40"/>
+        <image name="cb" width="480" height="359"/>
+        <image name="cbr" width="1200" height="675"/>
+        <image name="gsx1000" width="800" height="560"/>
+        <image name="honda" width="2272" height="372"/>
+        <image name="kawasaki" width="2278" height="384"/>
+        <image name="kymco" width="2277" height="376"/>
+        <image name="mt03" width="1600" height="1202"/>
+        <image name="my150" width="225" height="225"/>
+        <image name="ninja" width="700" height="430"/>
+        <image name="quannon" width="1000" height="563"/>
+        <image name="suzuki" width="2268" height="374"/>
+        <image name="sym" width="2274" height="382"/>
+        <image name="t2" width="1280" height="1280"/>
+        <image name="vstroam" width="595" height="420"/>
+        <image name="yamaha" width="2272" height="380"/>
+        <image name="z1000" width="259" height="194"/>
+        <image name="擋車" width="259" height="194"/>
+        <image name="野狼" width="225" height="225"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3J8-ch-aEh"/>
+    </inferredMetricsTieBreakers>
+</document>

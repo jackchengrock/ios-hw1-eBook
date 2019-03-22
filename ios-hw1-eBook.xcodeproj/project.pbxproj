@@ -14,6 +14,9 @@
 		4557493622447F26000CE726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557493422447F26000CE726 /* LaunchScreen.storyboard */; };
 		4557494122447F26000CE726 /* ios_hw1_eBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557494022447F26000CE726 /* ios_hw1_eBookTests.swift */; };
 		4557494C22447F26000CE726 /* ios_hw1_eBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557494B22447F26000CE726 /* ios_hw1_eBookUITests.swift */; };
+		45578EB2224510E600BEE5DB /* 擋車.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45578EB1224510E600BEE5DB /* 擋車.storyboard */; };
+		45578EB42245112400BEE5DB /* 大羊.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45578EB32245112400BEE5DB /* 大羊.storyboard */; };
+		45578EB6224516EA00BEE5DB /* 速可達.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45578EB5224516EA00BEE5DB /* 速可達.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		4557494722447F26000CE726 /* ios-hw1-eBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-hw1-eBookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4557494B22447F26000CE726 /* ios_hw1_eBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_hw1_eBookUITests.swift; sourceTree = "<group>"; };
 		4557494D22447F26000CE726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45578EB1224510E600BEE5DB /* 擋車.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "擋車.storyboard"; sourceTree = "<group>"; };
+		45578EB32245112400BEE5DB /* 大羊.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "大羊.storyboard"; sourceTree = "<group>"; };
+		45578EB5224516EA00BEE5DB /* 速可達.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "速可達.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				4557492B22447F24000CE726 /* AppDelegate.swift */,
 				4557492D22447F24000CE726 /* ViewController.swift */,
 				4557492F22447F24000CE726 /* Main.storyboard */,
+				45578EB5224516EA00BEE5DB /* 速可達.storyboard */,
+				45578EB1224510E600BEE5DB /* 擋車.storyboard */,
+				45578EB32245112400BEE5DB /* 大羊.storyboard */,
 				4557493222447F26000CE726 /* Assets.xcassets */,
 				4557493422447F26000CE726 /* LaunchScreen.storyboard */,
 				4557493722447F26000CE726 /* Info.plist */,
@@ -230,8 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4557493622447F26000CE726 /* LaunchScreen.storyboard in Resources */,
+				45578EB2224510E600BEE5DB /* 擋車.storyboard in Resources */,
 				4557493322447F26000CE726 /* Assets.xcassets in Resources */,
+				45578EB6224516EA00BEE5DB /* 速可達.storyboard in Resources */,
 				4557493122447F24000CE726 /* Main.storyboard in Resources */,
+				45578EB42245112400BEE5DB /* 大羊.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
